@@ -34,6 +34,6 @@ it('Throws exception if target language not provided', function () {
 })->throws('Target Language should be set!');
 
 it('Throws exception if more than 5000 characters', function () {
-    $text = file_get_contents(__DIR__ . '/../sample_text.txt');
+    $text = file_get_contents(__DIR__ . '/../../assets/sample_text.txt');
     GoogleTranslator::translate($text, 'ckb');
 })->throws('Text is too long! Upto 5000 characters can be translated');

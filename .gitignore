@@ -1,4 +1,3 @@
-/vendor
 composer.lock
 .php-cs-fixer.cache
 /*/.php-cs-fixer.cache
@@ -7,5 +6,14 @@ composer.lock
 .DS_Store
 Thumbs.db
 phpunit.xml.gitattributes
-/.idea
-.phpunit.result.cache
+.idea
+.php_cs
+.php_cs.cache
+build
+coverage
+docs
+phpunit.xml
+phpstan.neon
+testbench.yaml
+vendor
+node_modules

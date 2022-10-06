@@ -7,8 +7,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/thejano/text-translator.svg?style=flat-square)](https://packagist.org/packages/thejano/text-translator)
 
 
-This package allows to translate text using Google Translator for free without api. It extracts the translated text from main Google Translate website.
-At the mean time only supports Google Translate, but the package designed to add other translator
+This package allows text translation using Google Translate for free without an API. It extracts the translated text from the Google Translate website. Meanwhile, it only supports Google Translate.
 
 Supported Languages for Google Translate
 

@@ -6,6 +6,6 @@ composer.lock
 /*/.phpunit.result.cache
 .DS_Store
 Thumbs.db
-phpunit.xml
+phpunit.xml.gitattributes
 /.idea
 .phpunit.result.cache

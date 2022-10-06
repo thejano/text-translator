@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="2.080679">
+    <testsuite name="P\Tests\GoogleTranslatorTest" file="/Users/pshtiwanmahmood/code/translator/vendor/pestphp/pest/src/Factories/TestCaseFactory.php(223) : eval()'d code" tests="7" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="2.080679">
+      <testcase name="it Throws exception if more than 5000 characters" assertions="1" time="0.001954"/>
+      <testcase name="it A target language which is not exists" assertions="1" time="0.437035"/>
+      <testcase name="it translate from Kurdish (ckb) to English (en)" assertions="1" time="0.382081"/>
+      <testcase name="it Throws exception if target language not provided" assertions="1" time="0.000241"/>
+      <testcase name="it Translate from English to Kurdish (ckb)" assertions="1" time="0.384030"/>
+      <testcase name="it Calling translate statically" assertions="1" time="0.399309"/>
+      <testcase name="it Translate from English to Kurdish (ckb) provide target language on initiation" assertions="1" time="0.476028"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

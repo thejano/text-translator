@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --${{ matrix.stability }} --prefer-dist --no-interaction
+          composer install --${{ matrix.stability }}
 
       - name: Execute tests
         run: vendor/bin/pest

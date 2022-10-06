@@ -43,7 +43,7 @@ class GoogleTranslator extends Translate implements TranslateInterface
     {
         $pattern = '/(?s)class="(?:t0|result-container)">(.*?)</';
 
-        preg_match_all('/(?s)class="(?:t0|result-container)">(.*?)</', $html, $result);
+        preg_match_all($pattern, $html, $result);
 
         return $result[1][0];
     }

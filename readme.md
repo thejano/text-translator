@@ -39,7 +39,7 @@ use TheJano\TextTranslator\GoogleTranslator;
 
 $text = 'Hello World';
 
-$translator = new GoogleTranslator()
+$translator = new GoogleTranslator();
 
 $translated =  $translator->translate($text,'ckb'); // ckb stands for Kurdish Sorani language 
 

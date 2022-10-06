@@ -1,0 +1,50 @@
+{
+    "name": "thejano/text-translator",
+     "keywords": [
+        "TheJano",
+        "text",
+        "translate",
+        "translator",
+        "text-translate",
+        "Google",
+        "Google Translate"
+    ],
+    "description": "A package to translate text from Google Translator without api. ",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TheJano\\TextTranslator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dr Pshtiwan",
+            "email": "drpshtiwan@thejano.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "nunomaduro/collision": "^6.0",
+        "pestphp/pest": "^1.21",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

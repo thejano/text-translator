@@ -10,10 +10,16 @@
         "Google Translate"
     ],
     "description": "A package to translate text from Google Translator for free without api. ",
+    "homepage": "https://github.com/thejano/text-translator",
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "TheJano\\TextTranslator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheJano\\TextTranslator\\Tests\\": "tests"
         }
     },
     "authors": [

@@ -35,10 +35,7 @@
     "require-dev": {
         "roave/security-advisories": "dev-latest",
         "friendsofphp/php-cs-fixer": "^3.8",
-        "nunomaduro/collision": "^6.0",
-        "pestphp/pest": "^1.21",
-        "phpstan/phpstan": "^1.8",
-        "phpunit/phpunit": "^9.5"
+        "pestphp/pest": "^1.22"
     },
     "config": {
         "sort-packages": true,

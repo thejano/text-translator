@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --${{ matrix.stability }}
+          composer install
 
       - name: Execute tests
         run: vendor/bin/pest

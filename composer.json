@@ -9,7 +9,7 @@
         "Google",
         "Google Translate"
     ],
-    "description": "A package to translate text from Google Translator without api. ",
+    "description": "A package to translate text from Google Translator for free without api. ",
     "license": "MIT",
     "autoload": {
         "psr-4": {

@@ -14,7 +14,7 @@ abstract class Translate
 
     protected string $text;
 
-    public function __construct(string $sourceLanguage = 'en', string $targetLanguage = '')
+    public function __construct(string $sourceLanguage = 'auto', string $targetLanguage = '')
     {
         $this->sourceLanguage = $sourceLanguage;
         $this->targetLanguage = $targetLanguage;

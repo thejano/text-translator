@@ -16,5 +16,5 @@ interface TranslateInterface
 
     public function makeRequest(): string;
 
-    public function extractTranslate(string $html): string;
+    public function extractTranslate(string $data): string;
 }

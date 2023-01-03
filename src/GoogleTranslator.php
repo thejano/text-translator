@@ -27,10 +27,25 @@ class GoogleTranslator extends Translate implements TranslateInterface
 
     public function makeRequest(): string
     {
-        $url = "https://translate.google.com/m?tl={$this->targetLanguage}&sl={$this->sourceLanguage}&q={$this->text}";
+        $params = [
+            'sl' => $this->sourceLanguage,
+            'tl' => $this->targetLanguage,
+            'q' => $this->text,
+            'dt' => 't',
+            'dj' => '1',
+            'client' => 'gtx',
+            'oe' => 'utf-8',
+            'ie' => 'utf-8',
+        ];
+
+        $url = 'https://translate.googleapis.com/translate_a/single?' . http_build_query($params);
 
         $client = new \GuzzleHttp\Client();
-        $response = $client->get($url);
+        $response = $client->get($url, [
+            'headers' => [
+                'User-Agent' => 'GoogleTranslate/6.6.1.RC09.302039986 (Linux; U; Android 9; Redmi Note 8)',
+            ],
+        ]);
 
         if (200 !== $response->getStatusCode()) {
             throw new \Exception('Could not connect to google translate');
@@ -39,12 +54,10 @@ class GoogleTranslator extends Translate implements TranslateInterface
         return $response->getBody()->getContents();
     }
 
-    public function extractTranslate(string $html): string
+    public function extractTranslate(string $data): string
     {
-        $pattern = '/(?s)class="(?:t0|result-container)">(.*?)</';
+        $data = json_decode($data, true);
 
-        preg_match_all($pattern, $html, $result);
-
-        return $result[1][0];
+        return $data['sentences'][0]['trans'];
     }
 }

@@ -53,9 +53,9 @@ GoogleTranslator::translate('مرحبا بالعالم','en','ar'); // will retu
 ```
 <br>
 
-The class `GoogleTranslator` by default the source language is set to English, also you can override and provide target language on initiation.
+The class `GoogleTranslator` by default the source language is set to Auto, also you can override and provide target language on initiation.
 ```php
-new GoogleTranslator(string $sourceLanguage = 'en', string $targetLanguage = '')
+new GoogleTranslator(string $sourceLanguage = 'auto', string $targetLanguage = '')
 ```
 <br>
 

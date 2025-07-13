@@ -43,22 +43,22 @@ abstract class Translate
 
     public function setProvidedLanguages(string $sourceLanguage, string $targetLanguage): void
     {
-        if ('' !== $sourceLanguage) {
+        if ($sourceLanguage !== '') {
             $this->setSourceLanguage($sourceLanguage);
         }
 
-        if ('' !== $targetLanguage) {
+        if ($targetLanguage !== '') {
             $this->setTargetLanguage($targetLanguage);
         }
     }
 
     public function validateLanguages(): void
     {
-        if ('' === $this->sourceLanguage) {
+        if ($this->sourceLanguage === '') {
             throw new \Exception('Source Language should be set!');
         }
 
-        if ('' === $this->targetLanguage) {
+        if ($this->targetLanguage === '') {
             throw new \Exception('Target Language should be set!');
         }
     }

@@ -38,7 +38,7 @@ class GoogleTranslator extends Translate implements TranslateInterface
             'ie' => 'utf-8',
         ];
 
-        $url = 'https://translate.googleapis.com/translate_a/single?' . http_build_query($params);
+        $url = 'https://translate.googleapis.com/translate_a/single?'.http_build_query($params);
 
         $client = new \GuzzleHttp\Client();
         $response = $client->get($url, [
@@ -47,7 +47,7 @@ class GoogleTranslator extends Translate implements TranslateInterface
             ],
         ]);
 
-        if (200 !== $response->getStatusCode()) {
+        if ($response->getStatusCode() !== 200) {
             throw new \Exception('Could not connect to google translate');
         }
 

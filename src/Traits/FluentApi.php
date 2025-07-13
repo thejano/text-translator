@@ -21,10 +21,10 @@ trait FluentApi
 
     private function call($method, $args)
     {
-        if (! method_exists($this, '_' . $method)) {
-            throw new \Exception('Call undefined method ' . $method);
+        if (! method_exists($this, '_'.$method)) {
+            throw new \Exception('Call undefined method '.$method);
         }
 
-        return $this->{'_' . $method}(...$args);
+        return $this->{'_'.$method}(...$args);
     }
 }

@@ -2,8 +2,6 @@
 # Text Translator for PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thejano/text-translator.svg?style=flat-square)](https://packagist.org/packages/thejano/text-translator)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/thejano/text-translator/run-tests?label=tests)](https://github.com/thejano/text-translator/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/thejano/text-translator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/thejano/text-translator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/thejano/text-translator.svg?style=flat-square)](https://packagist.org/packages/thejano/text-translator)
 
 
@@ -55,9 +53,9 @@ GoogleTranslator::translate('مرحبا بالعالم','en','ar'); // will retu
 ```
 <br>
 
-The class `GoogleTranslator` by default the source language is set to English, also you can override and provide target language on initiation.
+The class `GoogleTranslator` by default the source language is set to Auto, also you can override and provide target language on initiation.
 ```php
-new GoogleTranslator(string $sourceLanguage = 'en', string $targetLanguage = '')
+new GoogleTranslator(string $sourceLanguage = 'auto', string $targetLanguage = '')
 ```
 <br>
 
